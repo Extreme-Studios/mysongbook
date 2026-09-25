@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/song/:path*", "destination": "/index.html" },
+    { "source": "/new", "destination": "/index.html" },
+    { "source": "/new/:path*", "destination": "/index.html" }
+  ]
+}
