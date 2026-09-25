@@ -1,7 +1,7 @@
 import { JWT } from 'google-auth-library'
-import type { Song } from '../../src/data/types'
-import { parseSongInput, validSongId } from '../../src/data/validation'
-import { ApiError } from './http'
+import type { Song } from '../../src/data/types.js'
+import { parseSongInput, validSongId } from '../../src/data/validation.js'
+import { ApiError } from './http.js'
 
 const HEADERS = ['id', 'title', 'artist', 'original_key', 'content_json', 'sort_order', 'updated_at']
 const BASE = 'https://sheets.googleapis.com/v4/spreadsheets'

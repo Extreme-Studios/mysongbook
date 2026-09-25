@@ -1,8 +1,8 @@
-import type { ApiRequest, ApiResponse } from '../_lib/http'
-import { requireAdmin } from '../_lib/auth'
-import { allowMethods, requestBody, sendError, ApiError } from '../_lib/http'
-import { deleteSong, readSongs, updateSong } from '../_lib/sheets'
-import { parseSongInput, validSongId } from '../../src/data/validation'
+import type { ApiRequest, ApiResponse } from '../_lib/http.js'
+import { requireAdmin } from '../_lib/auth.js'
+import { allowMethods, requestBody, sendError, ApiError } from '../_lib/http.js'
+import { deleteSong, readSongs, updateSong } from '../_lib/sheets.js'
+import { parseSongInput, validSongId } from '../../src/data/validation.js'
 
 export default async function handler(req: ApiRequest, res: ApiResponse) {
   res.setHeader('Cache-Control', 'no-store')

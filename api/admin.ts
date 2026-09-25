@@ -1,6 +1,6 @@
-import type { ApiRequest, ApiResponse } from './_lib/http'
-import { requireAdmin } from './_lib/auth'
-import { allowMethods, sendError } from './_lib/http'
+import type { ApiRequest, ApiResponse } from './_lib/http.js'
+import { requireAdmin } from './_lib/auth.js'
+import { allowMethods, sendError } from './_lib/http.js'
 
 export default async function handler(req: ApiRequest, res: ApiResponse) {
   res.setHeader('Cache-Control', 'no-store')

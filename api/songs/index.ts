@@ -1,9 +1,9 @@
 import { randomUUID } from 'node:crypto'
-import type { ApiRequest, ApiResponse } from '../_lib/http'
-import { requireAdmin } from '../_lib/auth'
-import { allowMethods, requestBody, sendError, ApiError } from '../_lib/http'
-import { createSong, readSongs } from '../_lib/sheets'
-import { parseSongInput } from '../../src/data/validation'
+import type { ApiRequest, ApiResponse } from '../_lib/http.js'
+import { requireAdmin } from '../_lib/auth.js'
+import { allowMethods, requestBody, sendError, ApiError } from '../_lib/http.js'
+import { createSong, readSongs } from '../_lib/sheets.js'
+import { parseSongInput } from '../../src/data/validation.js'
 
 export default async function handler(req: ApiRequest, res: ApiResponse) {
   res.setHeader('Cache-Control', 'no-store')

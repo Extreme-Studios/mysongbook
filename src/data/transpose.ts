@@ -1,4 +1,4 @@
-import type { ChordPlacement, SongBlock } from './types'
+import type { ChordPlacement, SongBlock } from './types.js'
 
 export const CHROMATIC_ROOTS = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'] as const
 

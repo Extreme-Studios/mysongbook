@@ -1,6 +1,6 @@
-import type { ApiRequest, ApiResponse } from './_lib/http'
-import { ApiError, allowMethods, sendError } from './_lib/http'
-import { verifyGoogleIdentity } from './_lib/auth'
+import type { ApiRequest, ApiResponse } from './_lib/http.js'
+import { ApiError, allowMethods, sendError } from './_lib/http.js'
+import { verifyGoogleIdentity } from './_lib/auth.js'
 
 // Available only in explicitly enabled local development. Never set SONGBOOK_BOOTSTRAP in Vercel.
 export default async function handler(req: ApiRequest, res: ApiResponse) {

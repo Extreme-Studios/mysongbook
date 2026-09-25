@@ -1,5 +1,5 @@
-import type { Song, SongBlock } from './types'
-import { CHROMATIC_ROOTS } from './transpose.ts'
+import type { Song, SongBlock } from './types.js'
+import { CHROMATIC_ROOTS } from './transpose.js'
 
 const ID_RE = /^[a-zA-Z0-9][a-zA-Z0-9_-]{0,99}$/
 const CHORD_RE = /^(?:C#|D#|F#|G#|A#|C|D|E|F|G|A|B)m?$/

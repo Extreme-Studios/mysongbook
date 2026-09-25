@@ -1,6 +1,6 @@
-import type { ApiRequest } from './http'
+import type { ApiRequest } from './http.js'
 import { OAuth2Client } from 'google-auth-library'
-import { ApiError } from './http'
+import { ApiError } from './http.js'
 
 export async function verifyGoogleIdentity(req: ApiRequest) {
   const token = /^Bearer (.+)$/.exec(req.headers.authorization ?? '')?.[1]
